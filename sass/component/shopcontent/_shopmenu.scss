@@ -1,0 +1,40 @@
+
+
+/*=============================================================================
+                    Shop menu Start 
+===============================================================================*/
+.Browse_catagory{
+    position: relative; 
+    
+    &::after{
+        @include afterbefore();
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background: #c9c9c9;
+    }
+    &::before{
+        @include afterbefore();
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background: #c9c9c9;
+    }
+    .menuleftfdropdown{
+        display: none;
+       
+    }
+    &:hover{
+        .menuleftfdropdown{
+            display: block;
+
+        }
+    }
+}
+
+
+/*=============================================================================
+                    Shop menu End 
+===============================================================================*/

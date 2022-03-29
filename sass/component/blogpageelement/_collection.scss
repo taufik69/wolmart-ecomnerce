@@ -1,0 +1,204 @@
+/*==============================================================
+                collection  css start
+===============================================================*/
+#collection {
+    padding: 15px 0 60px 0;
+
+    .left_part {
+
+        .imgboog {
+            overflow: hidden;
+
+            img {
+                @include transition(.2s);
+                border-radius: 5px;
+
+                &:hover {
+                    transform: scale(1.1)
+                }
+            }
+        }
+
+        .left_text {
+            margin-bottom: 30px;
+
+            p {
+                @include fs(14px, 500, #336699);
+                font-family: $popins;
+                margin-top: 13px;
+            }
+
+            a {
+                @include fs(20px, 600, #333);
+                font-family: $popins;
+
+            }
+
+            .summary {
+                @include fs(14px, 400, #666);
+                font-family: $popins;
+
+                .rm {
+                    @include fs(13px, 400, #336699);
+                    font-family: $popins;
+                    line-height: 32px
+                }
+
+            }
+
+            h6 {
+                @include fs(15px, 400, #666);
+                font-family: $popins;
+                margin: 10px 0;
+
+                .name {
+                    @include fs(16px, 600, #000);
+                    font-family: $popins;
+                }
+            }
+        }
+    }
+
+    .previous_next {
+        .leftchevron {
+            @include fs(15px, 400, #666);
+            font-family: $popins;
+            margin-top: 6px;
+
+            i.fa-long-arrow-alt-left {
+                font-size: 15px;
+                margin-right: 5px;
+            }
+        }
+
+        .one {
+            padding: 8px 7px;
+            margin: 0 8px;
+            @include fs(15px, 500, #336699);
+            border: 1px solid #ccc;
+
+
+        }
+
+        .two {
+            padding: 8px 7px;
+            margin: 0 8px;
+            @include fs(15px, 500, #336699);
+            border: 1px solid #ccc;
+
+
+        }
+
+        .rightchevron {
+            @include fs(15px, 400, #666);
+            font-family: $popins;
+            margin-top: 6px;
+
+            i.fa-long-arrow-alt-right {
+                font-size: 15px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .right_part {
+        .catagorieulol {
+            h5 {
+                @include fs(18px, 500, #333);
+                font-family: $popins;
+                text-transform: capitalize;
+
+            }
+
+            ul {
+                li {
+                    margin: 10px 0;
+
+                    a {
+                        @include fs(15px, 500, #333);
+                        font-family: $popins;
+                        margin-top: 5px;
+
+                        &:hover {
+                            color: #336699;
+                        }
+                    }
+                }
+            }
+        }
+
+        .smallslider {
+            margin-top: 10px;
+
+            .slider_row {
+                margin-bottom: 15px;
+
+                img {
+                    border-radius: 5px;
+                }
+
+                .slider_text {
+                    .text_head {
+                        @include fs(15px, 500, #333);
+                        font-family: $popins;
+                        margin-top: 5px;
+                    }
+
+                    .slider_para {
+                        @include fs(13px, 400, #333);
+                        font-family: $popins;
+                        margin-top: 3px;
+
+                    }
+                }
+            }
+        }
+
+        .custom_block {
+            h4 {
+                @include fs(17px, 500, #333);
+                font-family: $popins;
+                margin-top: 3px;
+            }
+            p{
+                @include fs(14px, 400, #333);
+                font-family: $popins;
+                margin-top: 10px;
+            }
+        }
+        .browerTag{
+            margin-top: 15px;
+            h5{
+                @include fs(17px, 500, #333);
+                font-family: $popins;
+               margin-bottom: 20px;
+            }
+            .bunboos{
+                margin: 10px 0;
+            }
+        }
+        .calender{
+            margin-top: 10px;
+            h5{
+                @include fs(17px, 500, #333);
+                font-family: $popins;
+               margin-bottom: 20px;
+            }
+
+        }
+    }
+    .fixedblog{
+        position: sticky;
+        left: 0;
+        top: -490px;
+        width: 100%;
+    }
+
+}
+
+
+
+
+/*==============================================================
+                collection  css end
+===============================================================*/

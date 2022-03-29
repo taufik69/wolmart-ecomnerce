@@ -1,0 +1,104 @@
+
+/*===============================================
+            leader part css start
+==================================================*/
+
+#leader_part{
+    padding: 100px 0 ;
+    .head_text{
+        h3{
+            @include fs(20px ,600, #666);
+            font-family: $popins;
+            text-align: center
+        }
+        p{
+            @include fs(15px ,400, #333);
+            font-family: $popins;
+            text-align: center;
+        }
+    }
+    .leaderimg{
+        margin-top: 40px;        
+        img{
+            border-radius: 10px;            
+        }
+        .leadderoverlay{
+            left: 0%;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            transition: all linear .2s;
+            transform: scale(0);
+            opacity: 0;
+            ul{
+                li{
+                    text-align: center;
+                    
+                    a{
+                        width: 45px;
+                        height: 45px;
+                        line-height: 41px;
+                        border: 2px solid #fff;
+                        color: #fff;
+                        font-size: 22px;
+                        margin-left: 9px;
+                        border-radius: 50%;
+                        transform: translate(160%, 324%);
+                        
+                    }
+                    &:hover{
+                        .ff{
+                            background: #1b4f9b;
+                            border-color: #1b4f9b;
+                        }
+                        .tt{
+                            background: #007aff;
+                            border-color: #007aff;
+                        }
+                        .ii{
+                            background: #cc0001;
+                            border-color: #cc0001; 
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            .leadderoverlay{
+                // display: block;
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+    }
+    .leaderimgtext{
+
+        margin-top: 20px;
+        h4{
+            @include fs(20px , 500, #333);
+            font-family: $popins;
+        }
+        h6{
+            @include fs(15px , 400, #333);
+            font-family: $popins;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================================
+            leader part css End
+==================================================*/

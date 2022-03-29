@@ -1,0 +1,113 @@
+/*============================================
+        vendor store lister body start
+===============================================*/
+#vslbody{
+    padding: 20px 0;
+
+    .vendor_slimg{
+        position: relative;
+        .vsloverlay{
+            @include afterbefore();
+            top: 15px;
+            left: 20px;
+            padding: 3px 10px;
+            line-height: 20px;
+            text-align: center;
+            background: #2d54a3;
+            .fetaure_tag{
+                @include fs(13px ,500, #fff);
+                font-family: $popins;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .customrow{
+        margin-bottom: 20px !important;
+        .customcol{
+            border: 1px solid #ccc;
+            .vendorslright{
+                position: relative;
+                margin-top: 70px;
+                margin-left: 60px;
+                .vlsoverlay{
+                    @include afterbefore();
+                    top: 7px;
+                    left: -106px;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    background: #ff9742;
+                    
+                    img{
+                        @include transition(.3s);
+                        border: 1px solid #000;
+                        border-radius: 50%;
+                        &:hover{
+                            transform: translate(-20%,5%);
+                            -moz-box-shadow: 10px 10px 16px #000000;
+                            -webkit-box-shadow: 10px 10px 16px #000000;
+                            box-shadow: 10px 10px 15px #02020278;
+                            border: none;
+                        }
+                    }
+                }
+                .right_head{
+                    @include fs(24px ,500, #666);
+                    font-family: $popins;
+                    margin-bottom: 8px;
+                }
+                .vslicon{
+                    i.fa-star{
+                        color: #ff9742;
+                        font-size: 15px;
+                        letter-spacing: 2px;
+                    }
+                }
+                .adress{
+                    @include fs(14px ,400, #333);
+                    font-family: $popins;
+                    margin-top: 5px;
+                }
+                .clilickbtn{
+                    margin-top: 2px;
+                    a{
+                    @include fs(16px ,500, #000);
+                    font-family: $popins;
+                    position: relative;
+                    &::after{
+                        @include afterbefore();
+                        bottom: -2px;
+                        left: 0;
+                        width: 75%;
+                        height: 3px;
+                        background: #1842a3c2;
+                        transform: scale(0);
+                        @include transition(.4s);
+                    }
+                    &:hover{
+                       
+                           &::after{
+                            transform: scale(1);
+                           }
+                       
+                    }
+                    i.fa-long-arrow-alt-right{
+                        font-size: 20px;
+                        color: green;
+                        text-align: center;
+                        margin-left: 5px;
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+
+/*============================================
+        vendor store lister body end
+===============================================*/

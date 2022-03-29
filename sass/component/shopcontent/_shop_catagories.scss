@@ -1,0 +1,219 @@
+/*=======================================================
+            shop main catagories part start
+=========================================================*/
+#allcatagories {
+    padding: 30px 0;
+
+    .left_head {
+        justify-content: space-between;
+
+        p {
+            @include fs(16px, 600, #666464);
+            font-family: $popins;
+        }
+    }
+
+    .colloaps_body {
+        margin-top: 20px;
+
+        ul {
+            li {
+                padding: 5px 0;
+
+                a {
+                    @include fs(14px, 400, #666464);
+                    font-family: $popins;
+
+                    &:hover {
+                        color: #336699;
+                    }
+                }
+            }
+        }
+
+        .for_radio {
+            padding: 5px 0;
+
+            .radio_button_text {
+                @include fs(15px, 400, #666464);
+                font-family: $popins;
+                margin-left: 10px;
+                margin-top: 1px;
+                cursor: pointer;
+                &:hover {
+                    color: #336699;
+                    
+                }
+            }
+
+        }
+
+        .minmax {
+            .btn {
+                padding: 3px 10px;
+                background: #fff;
+                color: #ccc;
+                border: 1px solid #ccc;
+                margin-right: 16px;
+                border-radius: 5px;
+
+            }
+
+            h2 {
+                color: #ccc;
+                margin-right: 15px;
+
+            }
+
+            .gobtn {
+                margin-left: 5px;            
+                background: #336699;
+                color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 3px 10px;
+                &:hover {
+                    background: #3183b9;
+                }
+            }
+        }
+    }
+    .right_head{
+        h6{
+            @include fs(15px , 600, #333);
+            font-family: $popins;
+        }
+        .custom_dropdown{
+            margin-top: -5px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+            background: #fff;
+            padding: 6px 28px;
+            margin-left: 10px;
+            border-radius: 3px;
+            
+        }
+        .customli{
+            
+                li{
+                    a{
+                        @include fs(12px,400, #333);
+                         font-family: $popins;
+                    }
+                }
+            
+        }
+        .showddp{
+            margin-left: 560px;
+        }
+        .qubebox_icon{
+            a{
+                i.fa-buromobelexperte{
+                    font-size: 23px;
+                    color: #000;
+                    margin-left: 5px;
+                    &:hover{
+                        color: #336699;
+                        
+                    }
+                }
+
+            }
+        }
+    }
+    .main_catagories{
+        margin-top: 14px;
+        .right_img_info{
+            img:nth-child(1){
+                display: none;
+            }
+            &:hover{
+                img:nth-child(1){
+                    display: block;
+                }
+                img:nth-child(2){
+                    display: none;
+                }
+            }
+            .img_text{
+                p{
+                    @include fs(13px,400,#ccc);
+                    font-family: $popins;
+                    margin-top: 5px;
+                    text-transform: uppercase;
+                    &:hover{
+                        color: #336699
+                    }
+                }
+                h6{
+                    @include fs(15px,500,#333);
+                    font-family: $popins;
+                    margin-top: 2px;
+                    &:hover{
+                        color: #336699;
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            color: #f93;
+                            font-size: 12px;
+                            &:hover{
+                                color: #336699;
+                            }
+                        }
+                        &:last-child{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .price{
+                    @include fs(16px, 600, #000);
+                    margin-bottom: 20px;
+                    font-family: $popins;
+                    margin-top: 5px;
+                }
+
+            }
+            .img_overlay{
+                left: 38px;
+                bottom: 37px;
+                width: 80%;
+                height: 10%;
+                border-radius: 5px;
+                background: rgba(0, 0, 0, 0.555);
+                opacity: 0;
+                @include transition(.3s);
+                .cart_icon{
+                    text-align: center;
+                    a{
+                        font-size: 19px;
+                        color: #fff;
+                        line-height: 40px;
+                        margin: 0 5px;
+                        @include transition(.1s);
+                        &:hover{
+                            color: #f93;
+                            transform: rotate(0.5turn);
+                        }
+                    }
+                    
+                }
+            }
+            &:hover{
+                .img_overlay{
+                    bottom: 110px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/*=======================================================
+            shop main catagories part end
+=========================================================*/

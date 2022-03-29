@@ -1,0 +1,99 @@
+
+@import'../Mixins/mixins';
+@import'../variable/variable';
+
+/*==================================================================
+            accesorries part start
+======================================================================*/
+
+#accesorries_part{
+    padding: 20px 0;
+    /*===========left part overlay==================*/
+    .left_part{
+        position: relative;
+        .overlay{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            padding: 30px 50px;
+            h4{
+                @include fs(20px ,400,#333);
+                font-family: $popins;
+                margin-bottom: 5px;
+                
+                span{
+                    font-family: $popins;
+                    @include fs(20px ,700,#f77c29 );
+                }
+            }
+            h2{
+                @include fs(32px ,700,#000000);
+                font-family: $popins;
+                span{
+                    display: block;
+                    font-family: $popins;
+                    @include fs(26px ,400,#333333);
+                }
+            }
+            p{
+                @include fs(15px ,400,#666);
+                font-family: $popins;
+                margin-top: 20px;
+                span{
+                    @include fs(15px ,600,#f77c29 );
+                    font-family: $popins;
+                        
+                }
+                
+            }
+        }
+    }
+/*===========left part overlay==================*/
+/*===========Right part overlay==================*/
+.right_part{
+    position: relative;
+    .overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 30px 50px;
+        h4{
+            @include fs(20px ,400,#c4c4c5);
+            font-family: $popins;
+            margin-bottom: 5px;
+            
+        }
+        h2{
+            @include fs(32px ,700,#ffff);
+            font-family: $popins;
+            span{
+                display: block;
+                font-family: $popins;
+                @include fs(26px ,400,#fff);
+            }
+        }
+        p{
+            @include fs(13px ,400,#ffff);
+            font-family: $popins;
+            margin-top: 20px;
+            span{
+                @include fs(13px ,600,#ffff );
+                font-family: $popins;
+                    
+            }
+            
+        }
+    }
+}
+
+/*===========Right part overlay==================*/
+    
+}
+
+/*==================================================================
+            accesorries part End
+======================================================================*/

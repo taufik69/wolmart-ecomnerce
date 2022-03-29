@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olmart e-commerce</title>
+    <link rel="icon" href="images/titlie img/ficon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="font/flaticon.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/Jzoom.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ===========================================
+                Header part start
+ =================================================-->
+    <div id="header">
+        <div class="container px-lg-0">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="header_left py-lg-0">
+                        <p>WELCOME TO WOLMART STORE MESSAGE OR REMOVE IT!</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="header_right d-flex justify-content-end">
+                        <div class="currency">
+                            <ul>
+                                <li><a href="#">USD <i class="fas fa-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="#"> USD</a></li>
+                                        <li><a href="#"> EUR</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="currency">
+                            <ul>
+                                <li> <img src="images/home_page/eng.png" class="img-fluid -100" width="14px"
+                                        height="8px" alt=""><a href="#">USD <i class="fas fa-chevron-down"></i></a>
+                                    <ul>
+                                        <li><img src="images/home_page/eng.png" class="img-fluid -100" width="14px"
+                                                height="8px" alt="eng flag"><a href="#">USD</a>
+                                        <li><img src="images/home_page/fra.png" class="img-fluid -100" width="14px"
+                                                height="8px" alt="fra flag"><a href="#">FAR</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="head_menu">
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us </a></li>
+                                <li><a href="#"> My Account</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="registration">
+                            <!-- Button trigger modal -->
+                            <a class="regisHitbtn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                    class="fas fa-user"></i>Sign In/</a>
+
+                            <a class="regisHitbtn" href="#" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Register</a>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <button type="button" class="btn-close closebtn" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                    <div class="modal-content modal_body">
+
+                                        <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+                                            <li class="nav-item " role="presentation">
+                                                <button class="active signinbtn1" id="pills-home-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                                                    role="tab" aria-controls="pills-home" aria-selected="true">SIGN IN
+                                                </button>
+                                            </li>
+                                            <li class="nav-item " role="presentation">
+                                                <button class="nav-link signupbtn1 " id="pills-profile-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
+                                                    role="tab" aria-controls="pills-profile" aria-selected="false">SIGN
+                                                    UP</button>
+                                            </li>
+
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                                aria-labelledby="pills-home-tab">
+                                                <form>
+                                                    <div class="mb-3 userform">
+                                                        <label for="exampleInputEmail1" class="form-label">Username or
+                                                            email address *
+                                                        </label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                    <div class="mb-3 userform">
+                                                        <label for="exampleInputPassword1" class="form-label">Password
+                                                            *</label>
+                                                        <input type="password" class="form-control"
+                                                            id="exampleInputPassword1">
+                                                    </div>
+                                                    <div class="mb-3 form-check d-flex radiobtn">
+                                                        <input type="checkbox" class="form-check-input btn-dark"
+                                                            id="exampleCheck1">
+                                                        <label class="form-check-label" for="exampleCheck1">Remember me
+                                                        </label>
+                                                        <div class="lastpass">
+                                                            <p>Last your password?</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <button type="submit" class="btn btn-success submitbtn ">SIGN
+                                                        IN</button>
+                                                </form>
+                                                <div class="signin">
+                                                    <h5>Sign in with social account</h5>
+                                                </div>
+                                                <div class="signsocial ">
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li><a href="#"> <i class="fab fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="#"> <i class="fab fa-google"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                aria-labelledby="pills-profile-tab">
+                                                <form>
+                                                    <div class="mb-3 userform">
+                                                        <label for="exampleInputEmail1" class="form-label">Your Email
+                                                            address *
+
+                                                        </label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                    <div class="mb-3 userform">
+                                                        <label for="exampleInputPassword1" class="form-label">Password
+                                                            *</label>
+                                                        <input type="password" class="form-control"
+                                                            id="exampleInputPassword1">
+                                                    </div>
+                                                    <div class="signup ">
+                                                        <p>Your personal data will be used to support your experience
+                                                            throughout this website, to manage access to your account,
+                                                            and for other purposes described in our <span> privacy
+                                                                policy. </span></p>
+
+                                                        <a href="#">Sign up as a vendor?</a>
+                                                    </div>
+                                                    <div class="mb-3 form-check radiobtn2">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="exampleCheck1">
+                                                        <label class="form-check-label" for="exampleCheck1">I agree to
+                                                            the <span>privacy policy</span> </label>
+
+                                                    </div>
+                                                    <button type="submit " class="btn btn-primary submitbtn">SING
+                                                        UP</button>
+                                                </form>
+                                                <div class="signin">
+                                                    <h5>Sign in with social account</h5>
+                                                </div>
+                                                <div class="signsocial ">
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li><a href="#"> <i class="fab fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="#"> <i class="fab fa-google"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===========================================
+                Header part end
+ =================================================-->
+    <!-- ===========================================
+                menu part start
+  =================================================-->
+    <div id="menu_part">
+        <div class="container px-lg-0">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo_part">
+                        <img src="images/menupart/logo.png" alt="menu_logo">
+                    </div>
+                </div>
+                <div class="col-lg-6  whole_search_item d-flex">
+                    <div class="search_part">
+                        <select aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Fashion</option>
+                            <option value="2">Furniture</option>
+                            <option value="3">Shoes</option>
+                            <option value="1">Sports</option>
+                            <option value="2">Games</option>
+                            <option value="3">Computers</option>
+                            <option value="3">Electronics</option>
+                            <option value="3">Kitchen</option>
+                            <option value="3">Clothing</option>
+                        </select>
+                    </div>
+                    <div class="searchicon">
+                        <div class="mb-3">
+                            <input type="text" placeholder="Search in....."><i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 ">
+                    <div class="right_part d-flex ">
+                        <a href="callto: 0(8800)123-456">
+                            <i class="fas fa-phone-alt"></i>
+                            <h5>Live Chat <span>or :</span></h5>
+                            <p>0(800)123-456</p>
+                        </a>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                            <p>Wishlist</p>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-balance-scale"></i>
+                            <p>Compare</p>
+                        </a>
+                        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                            href="#">
+                            <i class="fas fa-shopping-bag">
+                                <span>2</span>
+                            </i>
+                            <p>Cart</p>
+                        </a>
+                        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Shopping Cart</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body ">
+                                <div class="canvas_item d-flex">
+                                    <div class="card_left">
+                                        <a href="#">Beige knitted elas <br>Tic runner shoes</br></a>
+                                        <p> 1 x $25.68 </p>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#"><img src="images/menupart/product-1.jpg" alt="product 1"></a>
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </div>
+
+
+                                <div class="canvas_item d-flex">
+                                    <div class="card_left">
+                                        <a href="#">Beige knitted elas <br>Tic runner shoes</br></a>
+                                        <p> 1 x $25.68 </p>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#"><img src="images/menupart/product-2.jpg" alt="product 1"></a>
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </div>
+
+
+                                <div class="subbill d-flex ">
+                                    <p>Subtotal:</p>
+                                    <p>$58.67</p>
+                                </div>
+                                <div class="checckoutbtn d-flex ">
+                                    <a href="#">ViewCart</a>
+                                    <a href="#">CheckOut</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===========================================
+                menu part end
+ =================================================-->
+    <!-- ===========================================
+                mega menu part start
+ =================================================-->
+ <nav id="mega_menu">
+    <div class="container px-lg-0">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="menu-left Browse_catagory Vendor_browerhover">
+                    <a href="#"> <i class="fas fa-list"></i>Browse Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="menuleftfdropdown">
+                        <ul>
+                            <li>
+                                <a href="#"> <i class="fas fa-tshirt"></i>Fashion <i
+                                        class="fas fa-chevron-right"></i></a>
+                                <div class="leftdropdown2">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="megawomenandmen">
+                                                <h3>Women</h3>
+                                                <ul>
+                                                    <li><a href="#"> New Arrivals</a></li>
+                                                    <li><a href="#"> Best Sellers</a></li>
+                                                    <li><a href="#"> Trending</a></li>
+                                                    <li><a href="#"> Clothing</a></li>
+                                                    <li><a href="#"> Shoes</a></li>
+                                                    <li><a href="#"> Bags</a></li>
+                                                    <li><a href="#"> Accessories</a></li>
+                                                    <li><a href="#"> Accessories Jewlery & Watches</a></li>
+                                                    <li><a href="#"> Sale</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="megawomenandmen">
+                                                <h3>Men</h3>
+                                                <ul>
+                                                    <li><a href="#"> New Arrivals</a></li>
+                                                    <li><a href="#"> Best Sellers</a></li>
+                                                    <li><a href="#"> Trending</a></li>
+                                                    <li><a href="#"> Clothing</a></li>
+                                                    <li><a href="#"> Shoes</a></li>
+                                                    <li><a href="#"> Bags</a></li>
+                                                    <li><a href="#"> Accessories</a></li>
+                                                    <li><a href="#"> Accessories Jewlery & Watches</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="imagedropdown">
+                                                <img src="images/megamenu/megamenleft.jpg " class="img-fluid w-100"
+                                                    alt="fashion drop down image">
+
+                                                <div class="dropdown_image_overlay">
+                                                    <h5>Get up to <span>20%Off</span></h5>
+                                                    <h2>Hot Sales</h2>
+                                                    <p>Shop Now <i class="fas fa-long-arrow-alt-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#"> <i class="fas fa-home"></i>Home & Garden <i
+                                        class="fas fa-chevron-right"></i></a>
+
+                                <div class="leftdropdown2">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="megawomenandmen">
+                                                <h3>Bedroom</h3>
+                                                <ul>
+                                                    <li><a href="#"> Beds, Frames & Bases</a></li>
+                                                    <li><a href="#"> Dressers</a></li>
+                                                    <li><a href="#"> Nightstands</a></li>
+                                                    <li><a href="#"> Kid's Beds & Headboards</a></li>
+                                                    <li><a href="#"> Armoires</a></li>
+
+                                                </ul>
+                                            </div>
+
+                                            <div class="megawomenandmen">
+                                                <h3>Living Room</h3>
+                                                <ul>
+                                                    <li><a href="#"> Coffee Tables</a></li>
+                                                    <li><a href="#"> Chairs</a></li>
+                                                    <li><a href="#"> Tables</a></li>
+                                                    <li><a href="#"> Futons & Sofa Beds</a></li>
+                                                    <li><a href="#"> Cabinets & Chests</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="megawomenandmen">
+                                                <h3>Office</h3>
+                                                <ul>
+                                                    <li><a href="#"> Office Chairs</a></li>
+                                                    <li><a href="#"> Desks</a></li>
+                                                    <li><a href="#"> Bookcases</a></li>
+                                                    <li><a href="#"> File Cabinets</a></li>
+                                                    <li><a href="#"> Breakroom Tables</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="megawomenandmen">
+                                                <h3> Kitchen & Dining</h3>
+                                                <ul>
+                                                    <li><a href="#"> Dining Sets</a></li>
+                                                    <li><a href="#"> Kitchen Storage Cabinets</a></li>
+                                                    <li><a href="#"> Bashers Racks</a></li>
+                                                    <li><a href="#"> Dining Chairs</a></li>
+                                                    <li><a href="#"> Dining Room Tables</a></li>
+                                                    <li><a href="#"> Bar Stools</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="imagedropdown">
+                                                <img src="images/megamenu/megamenu2.jpg" class="img-fluid w-100"
+                                                    alt="fashion drop down image">
+
+                                                <div class="dropdown_image_overlay">
+                                                    <h4> Restroom </h4>
+                                                    <h2>Furniture Sale</h2>
+                                                    <h5>Up to <span>20%Off</span></h5>
+                                                    <p>Shop Now <i class="fas fa-long-arrow-alt-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <a href="#"> <i class="fas fa-tv"></i>Electronics <i
+                                        class="fas fa-chevron-right"></i></a>
+                                <div class="leftdropdown2">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="megawomenandmen">
+                                                <h3>Laptops & Computers</h3>
+                                                <ul>
+                                                    <li><a href="#"> Desktop Computers</a></li>
+                                                    <li><a href="#"> Monitors</a></li>
+                                                    <li><a href="#"> Laptops</a></li>
+                                                    <li><a href="#"> Hard Drives & Storage</a></li>
+                                                    <li><a href="#"> Computer Accessories</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="megawomenandmen">
+                                                <h3> TV & Video</h3>
+                                                <ul>
+                                                    <li><a href="#"> TVs</a></li>
+                                                    <li><a href="#"> Home Audio Speakers</a></li>
+                                                    <li><a href="#"> Projectors</a></li>
+                                                    <li><a href="#"> Media Streaming Devices</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="megawomenandmen">
+                                                <h3>Digital Cameras</h3>
+                                                <ul>
+                                                    <li><a href="#"> Office Chairs</a></li>
+                                                    <li><a href="#"> Digital SLR Cameras</a></li>
+                                                    <li><a href="#"> Sports & Action Cameras</a></li>
+                                                    <li><a href="#"> Photo Printer</a></li>
+                                                    <li><a href="#"> Digital Memory Cards</a></li>
+                                                </ul>
+
+                                            </div>
+
+                                            <div class="megawomenandmen">
+                                                <h3> Cell Phones</h3>
+                                                <ul>
+                                                    <li><a href="#"> Carrier Phones</a></li>
+                                                    <li><a href="#"> Unlocked Phones</a></li>
+                                                    <li><a href="#"> Phone & Cellphone Cases</a></li>
+                                                    <li><a href="#"> Cellphone Chargers</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="imagedropdown">
+                                                <img src="images/megamenu/megamenu3.jpg" class="img-fluid w-100"
+                                                    alt="fashion drop down image">
+
+                                                <div class="dropdown_image_overlay">
+                                                    <h4> Deals Of The Week </h4>
+                                                    <h2>Save On Smart </h2>
+                                                    <h5>EarPhone <span>20%Off</span></h5>
+                                                    <div class="btn">
+                                                        <a href="#">SHOP NOW</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fas fa-bed"></i>Furniture <i
+                                        class="fas fa-chevron-right"></i></a>
+                                <div class="leftdropdown2">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="megawomenandmen">
+                                                <h3>Laptops & Computers</h3>
+                                                <ul>
+                                                    <li><a href="#"> Desktop Computers</a></li>
+                                                    <li><a href="#"> Monitors</a></li>
+                                                    <li><a href="#"> Laptops</a></li>
+                                                    <li><a href="#"> Hard Drives & Storage</a></li>
+                                                    <li><a href="#"> Computer Accessories</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="megawomenandmen">
+                                                <h3>Laptops & Computers</h3>
+                                                <ul>
+                                                    <li><a href="#"> Desktop Computers</a></li>
+                                                    <li><a href="#"> Monitors</a></li>
+                                                    <li><a href="#"> Laptops</a></li>
+                                                    <li><a href="#"> Hard Drives & Storage</a></li>
+                                                    <li><a href="#"> Computer Accessories</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="megawomenandmen">
+                                                <h3>Laptops & Computers</h3>
+                                                <ul>
+                                                    <li><a href="#"> Desktop Computers</a></li>
+                                                    <li><a href="#"> Monitors</a></li>
+                                                    <li><a href="#"> Laptops</a></li>
+                                                    <li><a href="#"> Hard Drives & Storage</a></li>
+                                                    <li><a href="#"> Computer Accessories</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-lg-3">
+                                            <div class="megawomenandmen">
+                                                <h3>Laptops & Computers</h3>
+                                                <ul>
+                                                    <li><a href="#"> Desktop Computers</a></li>
+                                                    <li><a href="#"> Monitors</a></li>
+                                                    <li><a href="#"> Laptops</a></li>
+                                                    <li><a href="#"> Hard Drives & Storage</a></li>
+                                                    <li><a href="#"> Computer Accessories</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 ">
+                                            <div class="furnitureimg">
+                                                <a href="#"><img src="images/menupart/furniture1.jpg"
+                                                        class="img-fluid w-100" alt=" furniture1"></a>
+                                                <div class="furniture_image_overlay">
+                                                    <h5>New Arrivals </h5>
+                                                    <h4>Amazing Sofa </h4>
+                                                    <hp>Starting at <span>$125.00</span></hp>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 ">
+                                            <div class="furnitureimg">
+                                                <a href="#"><img src="images/menupart/furniture2.jpg"
+                                                        class="img-fluid w-100" alt=" furniture1"></a>
+                                                <div class="furniture_image_overlay">
+                                                    <h5>Best Seller</h5>
+                                                    <h4>Chair & Lamp </h4>
+                                                    <p>From <span>$165.00 </span></p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+
+
+                            <li><a href="#"> <i class="fas fa-heartbeat "></i>Healthy & Beauty</a></li>
+                            <li><a href="#"> <i class="fas fa-gift"></i>Gift Ideas</a></li>
+                            <li><a href="#"> <i class="fas fa-gamepad"></i>Toy & Games</a></li>
+                            <li><a href="#"> <i class="fas fa-mug-hot"></i>Cooking</a></li>
+                            <li><a href="#"> <i class="fas fa-mobile-alt"></i>Smart Phones</a></li>
+                            <li><a href="#"> <i class="fas fa-camera-retro"></i>Cameras & Photo</a></li>
+                            <li><a href="#"> <i class="fas fa-gem"></i>Accessories</a></li>
+                            <li><a href="#"> <i class="fas fa-chevron-right "></i>View All Categories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ===================main menu start===================== -->
+            <div class="col-lg-6">
+                <div class="main_mega_menu2">
+                    <ul>
+                        <li><a href="index.html">Home </a></li>
+                        <!-- ================shop menu start==================== -->
+                        <li>
+                            <a href="shop.html">Shop <i class=" fas fa-chevron-down"></i></a>
+                            <div class="megamenu_drop_down">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="menu_element">
+                                            <h4>Shop Pages</h4>
+                                            <ul>
+                                                <li><a href="#"> Banner With Sidebar</a></li>
+                                                <li><a href="#"> Boxed Banner</a></li>
+                                                <li><a href="#"> Full Width Banner</a></li>
+                                                <li><a href="#"> Horizontal Filter <span>Hot</span></a></li>
+                                                <li><a href="#"> Off Canvas Sidebar <span> New</span> </a></li>
+                                                <li><a href="#"> Infinite Ajax Scroll</a></li>
+                                                <li><a href="#"> Right Sidebar</a></li>
+                                                <li><a href="#"> Both Sidebar</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <div class="menu_element">
+                                            <h4>Shop Layouts</h4>
+                                            <ul>
+                                                <li><a href="#"> Banner With Sidebar</a></li>
+                                                <li><a href="#"> 3 Columns Mode</a></li>
+                                                <li><a href="#"> 4 Columns Mode</a></li>
+                                                <li><a href="#"> 5 Columns Mode </a></li>
+                                                <li><a href="#"> 6 Columns Mode </a></li>
+                                                <li><a href="#"> 7 Columns Mode</a></li>
+                                                <li><a href="#"> 8 Columns Mode</a></li>
+                                                <li><a href="#"> List Mode</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 ">
+
+                                        <div class="menu_element third_menu_element">
+                                            <h4>Product Pages</h4>
+                                            <ul>
+                                                <li><a href="#"> Variable Product</a></li>
+                                                <li><a href="#"> Featured & Sale</a></li>
+                                                <li><a href="#"> Data In Accordion</a></li>
+                                                <li><a href="#"> Data In Sections </a></li>
+                                                <li><a href="#"> Image Swatch </a></li>
+                                                <li><a href="#"> Extended Info</a></li>
+                                                <li><a href="#"> Without Sidebar</a></li>
+                                                <li><a href="#"> 360o & Video <span>New</span> </a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="menu_element forthmenu_element">
+                                            <h4>Product Layouts</h4>
+                                            <ul>
+                                                <li><a href="#"> Default <span> Hot</span> </a></li>
+                                                <li><a href="#"> Vertical Thumbs</a></li>
+                                                <li><a href="#"> Grid Images</a></li>
+                                                <li><a href="#"> Masonry</a></li>
+                                                <li><a href="#"> Gallery </a></li>
+                                                <li><a href="#"> Sticky Info</a></li>
+                                                <li><a href="#"> Sticky Thumbs</a></li>
+                                                <li><a href="#"> Sticky Both</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- =====================shop menu end=================== -->
+                        <!-- vendor menu start -->
+                        <li>
+                            <a href="vendor.html">Vendor <i class=" fas fa-chevron-down"></i></a>
+                            <div class="vendordropdown">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="vendor_element">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"> Store Listing <i
+                                                            class="fas fa-chevron-right"></i></a>
+
+
+                                                    <div class="vendorelement_dropdown2">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="vendornesteddd">
+                                                                    <ul>
+                                                                        <li><a href="#">Store listing 1</a></li>
+                                                                        <li><a href="#">Store listing 2</a></li>
+                                                                        <li><a href="#">Store listing 3</a></li>
+                                                                        <li><a href="#">Store listing 4</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#"> Vendor Store <i
+                                                            class="fas fa-chevron-right"></i></a>
+                                                    <div class="vendorelement_dropdown2">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="vendornesteddd">
+                                                                    <ul>
+                                                                        <li><a href="#">Store listing 1</a></li>
+                                                                        <li><a href="#">Store listing 2</a></li>
+                                                                        <li><a href="#">Store listing 3</a></li>
+                                                                        <li><a href="#">Store listing 4</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- vendoer menu end -->
+                        <li>
+                            <!-- blog drop dowm start -->
+                            <a href="blog.html">Blog <i class=" fas fa-chevron-down"></i></a>
+                            <div class="blogdropdown">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="blogddelement">
+                                            <ul>
+                                                <li><a href="#">Classic</a></li>
+                                                <li><a href="#">Listing</a></li>
+                                                <li>
+                                                    <a href="#">Grid <i class="fas fa-chevron-right"></i></a>
+
+                                                    <ul>
+                                                        <li><a href="#"> Grid 2 columns</a></li>
+                                                        <li><a href="#"> Grid 3 columns</a></li>
+                                                        <li><a href="#"> Grid 4 columns</a></li>
+                                                        <li><a href="#"> Grid sidebar</a></li>
+
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Masonry <i class="fas fa-chevron-right"></i></a>
+
+                                                    <ul>
+                                                        <li><a href="#"> Masonry 2 columns</a></li>
+                                                        <li><a href="#"> Masonry 3 columns</a></li>
+                                                        <li><a href="#"> Masonry 4 columns</a></li>
+                                                        <li><a href="#"> Masonry sidebar</a></li>
+
+                                                    </ul>
+
+                                                </li>
+                                                <li>
+                                                    <a href="#">Mask <i class="fas fa-chevron-right"></i></a>
+
+                                                    <ul>
+                                                        <li><a href="#"> Blog mask grid</a></li>
+                                                        <li><a href="#"> Blog mask masonry</a></li>
+
+                                                    </ul>
+
+                                                </li>
+                                                <li><a href="#">Single Post</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <!-- blog menu end -->
+                        <!-- page menu start -->
+                        <li>
+                            <a href="page.html">Pages <i class=" fas fa-chevron-down"></i> </a>
+                            <!-- page drop dowm start -->
+                            <div class="pagedropdown">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="pageddelement">
+                                            <ul>
+                                                <li><a href="#"> About Us</a></li>
+                                                <li><a href="#"> Become A Vendor</a></li>
+                                                <li><a href="#"> Contact Us</a></li>
+                                                <li><a href="#"> FAQs</a></li>
+                                                <li><a href="#"> Error 404</a></li>
+                                                <li><a href="#"> Coming Soon</a></li>
+                                                <li><a href="#"> Wishlist</a></li>
+                                                <li><a href="#"> Cart</a></li>
+                                                <li><a href="#"> Checkout</a></li>
+                                                <li><a href="#"> My Account</a></li>
+                                                <li><a href="#"> Compare</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- page drop dowm end -->
+                        </li>
+                        <!-- page menu part end -->
+                        <li>
+                            <!-- element drop dowm start -->
+                            <a href="elementPage.html">Elements <i class=" fas fa-chevron-down"></i> </a>
+                            <div class="elementdropdown">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="elementddelement">
+                                            <ul>
+                                                <li><a href="#"> Accordions</a></li>
+                                                <li><a href="#"> Alert & Notification</a></li>
+                                                <li><a href="#"> Blog Posts</a></li>
+                                                <li><a href="#"> Buttons</a></li>
+                                                <li><a href="#"> Call to Action</a></li>
+                                                <li><a href="#"> Icons</a></li>
+                                                <li><a href="#"> Icon Boxes</a></li>
+                                                <li><a href="#"> Instagrams</a></li>
+                                                <li><a href="#"> Product Category</a></li>
+                                                <li><a href="#"> Products </a></li>
+                                                <li><a href="#"> Tabs</a></li>
+                                                <li><a href="#"> Testimonials</a></li>
+                                                <li><a href="#"> Titles</a></li>
+                                                <li><a href="#"> Typography</a></li>
+                                                <li><a href="#"> Vendors</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- element drop dowm end  -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- main menu end -->
+            <!-- menu last part icon and locatuion -->
+            <div class="col-lg-3">
+                <div class="menu_last_part">
+                    <div class="track">
+                        <h4> <i class="fas fa-map-marker-alt"></i> Track Order</h4>
+                    </div>
+                    <div class="dailydeal">
+                        <h4> <i class="fas fa-skull-crossbones"></i>Daily Deals</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- main mega menu last part -->
+        </div>
+    </div>
+</nav>
+    <!-- ===========================================
+                mega menu part end
+=================================================-->
+<!-- ===========================================
+                head part start
+=================================================-->
+<section id="headblog">
+    <div class="head_text">
+        <h1>About  us</h1>
+    </div>
+</section>
+
+<!-- ===========================================
+                head part end
+=================================================-->
+
+<!-- ===========================================
+               blog BreadCrumb part start
+=================================================-->
+<section id="breadcrumb">
+    <div class="container px-lg-0">
+        <div class="row">
+            <div class="col-lg-12 ">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb bottomline ">
+                        <li class="breadcrumb-item "><a class="Homebc" href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">blog</li>
+                        <li class="breadcrumb-item active" aria-current="page">Classic</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===========================================
+          blog  BreadCrumb part end
+=================================================-->
+<!-- =============================================
+                pages head  PART start
+ =================================================-->
+<section id="pagehead">
+    <div class="container px-lg-0">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="h1head">
+                    <h1>We’re Devoted Marketing <span>Consultants Helping Your Business Grow</span>  </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <span> labore et dolore magna aliqua. Venenatis tellu metus</span></p>
+                </div>
+                <div class="pageheadimg">
+                    <img src="images/page_image/h1.jpg" class="img-fluid w-100" alt="page head images">
+                </div>
+
+                <div class="bootstrapservice">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="headbootservice">
+                                <h2>We Provide Continuous & Kind Service for Customers</h2>
+
+                                <!-- accordian start -->
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                          Customer Service
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Lorem ipsum dolor sit eiusamet, consectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Venenatis tell us in metus vulputate eu scelerisque felis. Vel pretium vulp.</div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                          Online Consultation
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Lorem ipsum dolor sit eiusamet, consectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Venenatis tell us in metus vulputate eu scelerisque felis. Vel pretium vulp. </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                          Sales Management
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <!-- accordian End -->
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="page2ndimg">
+                                <img src="images/page_image/h2.jpg" class="img-fluid w-100" alt="page 2nd image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================
+                pages head  PART start
+ =================================================-->
+ <!-- =============================================
+                counter up  PART start
+ =================================================-->
+ 
+    <section id="counterup">
+        <div class="container px-lg-0">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="colcontent">
+                        <h2 class="counterjs">15,0000</h2>
+                        <h5>Product for sale</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, voluptate?</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="colcontent">
+                        <h2 class="counterjs">10,0000</h2>
+                        <h5>Community Earning</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, voluptate?</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="colcontent">
+                        <h2 class="counterjs">20,0000</h2>
+                        <h5>Growing Buyer</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, voluptate?</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+ <!-- =============================================
+                counter up  PART start
+ =================================================-->
+ <!-- =============================================
+                 Boost  PART start
+ =================================================-->
+    <section id="boost_part">
+            <div class="container px-lg-0">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="boostimg">
+                            <img src="images/page_image/h3.jpg" class="img-fluid w-100" alt="boost image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="boost_text">
+                            <h2>We Boost Our Clients’ Bottom Line by Optimizing Their Growth Potential</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis tellus in. metus vulputate eu scelerisque felis. Vel pretium lectus qua . Arpis massa. Nunc id cursus metus ididunt ut labore metus vulputate episcing.</p>
+                            <button type="button" class="btn btn-secondary btn-lg">Visit Our Store</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+  <!-- =============================================
+                Boost  PART End
+ =================================================-->
+
+<!-- =============================================
+                award  PART start
+ =================================================-->
+
+ <section id="award">
+     <div class="container px-lg-0">
+         <div class="row awardslider">
+             <h3 class="awardhead">Award</h3>
+             <div class="col-lg-4">
+                <div class="content text-center">
+                    <img src="images/page_image/logo1.png" class="img-fluid" alt="award logo">
+
+                    <h4>Winner Seo Master MAGT
+                        <br>
+                        Smart Start Award 2018
+                    </h4>
+                </div>
+             </div>
+
+             <div class="col-lg-4">
+                <div class="content text-center">
+                    <img src="images/page_image/logo2.png" class="img-fluid" alt="award logo">
+
+                    <h4>Winner Seo Master MAGT
+                        <br>
+                        Smart Start Award 2018
+                    </h4>
+                </div>
+             </div>
+
+
+             <div class="col-lg-4">
+                <div class="content text-center">
+                    <img src="images/page_image/logo3.png" class="img-fluid" alt="award logo">
+
+                    <h4>Winner Seo Master MAGT
+                        <br>
+                        Smart Start Award 2018
+                    </h4>
+                </div>
+             </div>
+             
+         </div>
+     </div>
+ </section>
+
+<!-- =============================================
+                award  PART end
+ =================================================-->
+
+<!-- =============================================
+                leader  PART Start
+ =================================================-->
+
+<section id="leader_part">
+    <div class="container px-lg-0">
+        <div class="head_text">
+            <h3>Meet Our Leaders</h3>
+            <p>Nunc id cursus metus aliquam. Libero id faucibus nisl tincidunt eget. Aliquam
+                <br>
+                maecenas ultricies mi eget mauris. Volutpat ac
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="leaderimg position-relative">
+                    <img src="images/page_image/men1.jpg" class="img-fluid w-100" alt="leader image">
+                    <div class="leadderoverlay position-absolute">
+                        <ul class="d-flex">
+                            <li><a  href="#" class="ff"> <i class="fab fa-facebook-f"></i></a></li>
+                            <li><a   class="tt" href="#"> <i class="fab fa-twitter"></i></a></li>
+                            <li><a  class="ii" href="#"> <i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="leaderimgtext text-center">
+                    <h4>John Deo</h4>
+                    <h6>Founder and CEO</h6>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="leaderimg position-relative">
+                    <img src="images/page_image/men2.jpg" class="img-fluid w-100" alt="leader image">
+                    <div class="leadderoverlay position-absolute">
+                        <ul class="d-flex">
+                            <li><a  href="#" class="ff"> <i class="fab fa-facebook-f"></i></a></li>
+                            <li><a   class="tt" href="#"> <i class="fab fa-twitter"></i></a></li>
+                            <li><a  class="ii" href="#"> <i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="leaderimgtext text-center">
+                    <h4>Jesica John</h4>
+                    <h6>Marketing</h6>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3">
+                <div class="leaderimg position-relative">
+                    <img src="images/page_image/men3.jpg" class="img-fluid w-100" alt="leader image">
+                    <div class="leadderoverlay position-absolute">
+                        <ul class="d-flex">
+                            <li><a  href="#" class="ff"> <i class="fab fa-facebook-f"></i></a></li>
+                            <li><a   class="tt" href="#"> <i class="fab fa-twitter"></i></a></li>
+                            <li><a  class="ii" href="#"> <i class="fab fa-instagram"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="leaderimgtext text-center">
+                    <h4>Rick Awdard Doe</h4>
+                    <h6>Developer</h6>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3">
+                <div class="leaderimg position-relative">
+                    <img src="images/page_image/men4.jpg" class="img-fluid w-100" alt="leader image">
+                    <div class="leadderoverlay position-absolute">
+                        <ul class="d-flex">
+                            <li><a  href="#" class="ff"> <i class="fab fa-facebook-f"></i></a></li>
+                            <li><a   class="tt" href="#"> <i class="fab fa-twitter"></i></a></li>
+                            <li><a  class="ii" href="#"> <i class="fab fa-instagram"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="leaderimgtext text-center">
+                    <h4>Mithala wan Vlocs</h4>
+                    <h6>Desigener</h6>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- =============================================
+                Leader  PART end
+ =================================================-->
+
+<!-- =============================================
+                subscribe PART start
+ =================================================-->
+ <section id="subscribe">
+    <div class="container px-lg-0">
+        <div class="row">
+            <div class="col-lg-1 px-lg-0">
+                <div class="leftfrist">
+                    <i class="far fa-envelope"></i>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sleft">
+                    <h3>Subscribe To Our Newsletter</h3>
+                    <p class="text-white">Get all the latest information on Events, Sales and Offers. </p>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <form class="d-flex search">
+                    <input class="form-control me-2" type="search" placeholder="Your Email address....."
+                        aria-label="Search">
+
+                </form>
+            </div>
+            <div class="col-lg-2">
+                <button type="button" class="btn btn-outline-dark fw-bolder subscribebtn"> SUBSCRIBE <i
+                        class="fas fa-long-arrow-alt-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================
+            subscribe PART end
+=================================================-->
+
+<!-- =============================================
+            footer PART start
+=================================================-->
+<section id="footerpart">
+    <div class="container px-lg-0">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="left1">
+                    <img src="images/fotter_top/logo.png" class=" img-fluid w-50" alt="footer left image">
+                    <h5>Got Question? Call us 24/7</h5>
+                    <a href="callto:1-800-570-7777">1-800-570-7777</a>
+                    <p>Register now to get updates on pronot get </p>
+                    <p>up icons & coupons ster now toon. </p>
+                    <ul class="footertopicon d-flex">
+                        <li><a href="#"> <i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"> <i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"> <i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"> <i class="fab fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="right_foter">
+                    <h5>My Account</h5>
+                    <ul>
+                        <li><a href="#"> Track My Order</a></li>
+                        <li><a href="#"> View Cart</a></li>
+                        <li><a href="#"> Sign In</a></li>
+                        <li><a href="#"> Help</a></li>
+                        <li><a href="#"> My Wishlist</a></li>
+                        <li><a href="#"> Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="right_foter">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#"> About Us</a></li>
+                        <li><a href="#"> Team Member</a></li>
+                        <li><a href="#"> Career</a></li>
+                        <li><a href="#"> Contact Us</a></li>
+                        <li><a href="#"> Affilate</a></li>
+                        <li><a href="#"> Order History</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="right_foter">
+                    <h5>Customer Service</h5>
+                    <ul>
+                        <li><a href="#"> Payment Methods </a></li>
+                        <li><a href="#"> Money-back guarantee!</a></li>
+                        <li><a href="#"> Product Returns</a></li>
+                        <li><a href="#"> Support Center</a></li>
+                        <li><a href="#"> Shipping</a></li>
+                        <li><a href="#"> Term and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =============================================
+            footer PART end
+=================================================-->
+<!-- =============================================
+            footer mid  PART Start
+=================================================-->
+
+<section id="footermid">
+    <div class="container px-lg-0">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content">
+
+                    <ul class="d-flex">
+                        <li>Consumer Electric:</li>
+                        <li><a href="#"> TV Television</a></li>
+                        <li><a href="#"> Air Condition</a></li>
+                        <li><a href="#"> Refrigerator</a></li>
+                        <li><a href="#"> Washing Machine</a></li>
+                        <li><a href="#"> Audio Speaker</a></li>
+                        <li><a href="#"> Security Camera</a></li>
+                        <li><a href="#"> View All</a></li>
+                    </ul>
+
+                    <ul class="d-flex">
+                        <li> Clothing & Apparel:</li>
+                        <li><a href="#"> Men's T-shirt</a></li>
+                        <li><a href="#"> Dresses</a></li>
+                        <li><a href="#"> Men's Sneacker</a></li>
+                        <li><a href="#"> Leather Backpack</a></li>
+                        <li><a href="#"> Jeans</a></li>
+                        <li><a href="#"> Sunglasses</a></li>
+                        <li><a href="#"> Boots</a></li>
+                        <li><a href="#"> Rayban</a></li>
+                        <li><a href="#"> Acccessories</a></li>
+                    </ul>
+
+                    <ul class="d-flex">
+                        <li>Home, Garden & Kitchen:</li>
+                        <li><a href="#"> Sofa</a></li>
+                        <li><a href="#"> Chair</a></li>
+                        <li><a href="#"> Living Room</a></li>
+                        <li><a href="#"> Cookware</a></li>
+                        <li><a href="#"> Utensil</a></li>
+                        <li><a href="#"> Blender</a></li>
+                        <li><a href="#"> Garden Equipments</a></li>
+                        <li><a href="#"> Decor</a></li>
+                        <li><a href="#"> Library</a></li>
+                    </ul>
+
+                    <ul class="d-flex">
+                        <li>Health & Beauty:</li>
+                        <li><a href="#"> Skin Care</a></li>
+                        <li><a href="#"> Body Shower</a></li>
+                        <li><a href="#"> Makeup</a></li>
+                        <li><a href="#"> Hair Care</a></li>
+                        <li><a href="#"> Lipstick</a></li>
+                        <li><a href="#"> Perfume</a></li>
+                        <li><a href="#"> View all</a></li>
+                    </ul>
+
+                    <ul class="d-flex">
+                        <li>Jewelry & Watches:</li>
+                        <li><a href="#"> Necklace</a></li>
+                        <li><a href="#"> Diamond Ring</a></li>
+                        <li><a href="#"> Refrigerator</a></li>
+                        <li><a href="#"> Leather Watcher</a></li>
+                        <li><a href="#"> Rolex</a></li>
+                        <li><a href="#"> Gucci</a></li>
+                        <li><a href="#"> Sun Pyrite</a></li>
+                        <li><a href="#"> Ammolite</a></li>
+                        <li><a href="#"> Australian Opal</a></li>
+                    </ul>
+
+                    <ul class="d-flex">
+                        <li>Computer & Technologies:</li>
+                        <li><a href="#"> Laptop</a></li>
+                        <li><a href="#"> iMac</a></li>
+                        <li><a href="#"> Smartphone</a></li>
+                        <li><a href="#"> Tablet</a></li>
+                        <li><a href="#"> Apple</a></li>
+                        <li><a href="#"> Asus</a></li>
+                        <li><a href="#"> Drone</a></li>
+                        <li><a href="#"> Wireless Speaker</a></li>
+                        <li><a href="#"> Game Controller</a></li>
+                        <li><a href="#"> View all</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =============================================
+            footer mid PART end
+=================================================-->
+<!-- =============================================
+            footer btoom PART start
+=================================================-->
+<section id="footerend">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row py-lg-4">
+                    <div class="col-lg-4">
+                        <p>Copyright © 2021 Wolmart Store. All Rights Reserved.</p>
+
+
+                    </div>
+
+                    <div class="col-lg-8 text-end mid_content d-flex">
+                        <h6> We're using safe payment for payment</h6>
+                        <img src="images/footerlast/payment.png" class=" img-fluid "
+                            alt="footer last image payment ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================
+            footer bootom PART end
+=================================================-->
+
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/Jzoom.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/handleCounter.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

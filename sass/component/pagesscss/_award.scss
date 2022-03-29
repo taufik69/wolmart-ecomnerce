@@ -1,0 +1,45 @@
+/*=============================================
+            Award part css start
+==============================================*/
+
+#award {
+    padding: 60px 0;
+    background: #d9d9db59;
+
+    .awardhead {
+        text-align: center;
+        margin-bottom: 10px;
+        @include fs(35px, 500, #333);
+        font-family: $popins;
+    }
+
+    .content {
+        margin-top: 20px;
+        h4 {
+            @include fs(20px, 400, #333);
+            font-family: $popins;
+            margin-top:15px ;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================================
+            Award part css End
+==============================================*/

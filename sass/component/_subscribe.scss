@@ -1,0 +1,58 @@
+@import'../Mixins/mixins';
+@import'../variable/variable';
+/*==============================================================
+                variable css start
+==================================================================*/
+
+#subscribe{
+    padding: 30px 0;
+    background-color: #336699;
+    .leftfrist{     
+        i{
+            color: #fff;
+            font-size: 60px;
+        }
+    }
+    .sleft{        
+        h3{
+            @include fs(20px ,500, #fff);
+            font-family: $popins; 
+            margin-top: 10px;
+        }
+
+    }
+    .search{
+        input{
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+    }
+    .subscribebtn{
+        margin-top: 10px;
+        padding: 10px 25px !important;
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+        margin-left: 20px;
+
+            i{
+                margin-left: 5px ;
+                color: #fff;
+            }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*==============================================================
+                variable css end
+==================================================================*/

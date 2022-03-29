@@ -1,0 +1,35 @@
+/*==================================
+        svg title part start
+=====================================*/
+
+#svg_part{
+    .box_head{
+        h2{
+            @include fs(35px,600,#333);
+            font-family: $popins;
+            margin-bottom: 10px;
+        }
+        p{
+            @include fs(15px,500,#333);
+            font-family: $popins;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================================
+        svg title part end
+=====================================*/

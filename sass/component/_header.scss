@@ -1,0 +1,287 @@
+ @import'../variable/variable';
+ @import'../Mixins/mixins';
+
+ /* ================================
+            Header part strart
+==================================-*/
+ #header {
+     height: 40px;
+     background: #dddd;
+
+     .header_left p {
+         @include fs(14px, 400, #333);
+         text-transform: uppercase;
+         font-family: $popins;
+         line-height: 40px;
+     }
+
+     .header_right {
+         ul {
+             transition: all linear .3s;
+             line-height: 40px;
+
+             li {
+                 position: relative;
+                 margin-left: 8px;
+
+                 a {
+                     @include fs(14px, 400, #333);
+                     font-family: $popins;
+
+                     &:hover {
+                         color: #336699;
+                     }
+                 }
+
+                 ul {
+                     position: absolute;
+                     top: 50px;
+                     width: 50px;
+                     left: -5px;
+                     padding: 0;
+                     background: #e0dfdf;
+                     visibility: hidden;
+                     opacity: 0;
+                     z-index: 90;
+
+                     &::after {
+                         @include afterbefore;
+                         top: -20px;
+                         left: 45%;
+                         transform: translate(-50%);
+                         border-top: 10px solid transparent;
+                         border-left: 10px solid transparent;
+                         border-right: 10px solid transparent;
+                         border-bottom: 10px solid #e0dfdf;
+                     }
+
+                     li {
+                         text-align: center;
+
+                         a {
+                             color: #333;
+
+                             &:hover {
+                                 color: #336699;
+                             }
+                         }
+                     }
+                 }
+             }
+
+             &:hover {
+                 ul {
+                     visibility: visible;
+                     opacity: 1;
+                 }
+             }
+         }
+
+         .head_menu {
+             ul {
+                 display: flex;
+                 position: relative;
+
+                 &::after {
+                     @include afterbefore;
+                     left: 49px;
+                     top: 14px;
+                     width: 1px;
+                     height: 16px;
+                     background: #333;
+                 }
+
+                 li {
+                     padding-right: 20px;
+
+                     a {
+                         @include fs(13px, 300, #333);
+                         position: relative;
+                     }
+                 }
+             }
+         }
+
+         .regisHitbtn {
+
+             line-height: 40px;
+             @include fs(15px, 400, #333);
+             font-family: $popins;
+
+             &:hover {
+                 color: #09418a;
+             }
+         }
+
+         .modal_body {
+             padding: 40px;
+
+             .signinbtn1 {
+                 @include fs(17px, 700, #336699);
+                 font-family: $popins;
+                 border: none;
+                 background: none;
+                 position: relative;
+                 cursor: pointer;
+                 margin-left: 70px;
+                 transition: all linear .3s;
+
+                 &:hover {
+                     &::after {
+                         background: #336699;
+                     }
+                 }
+
+                 &::after {
+                     @include afterbefore;
+                     bottom: 3px;
+                     left: -44px;
+                     width: 320%;
+                     height: 2px;
+                     background: #a0a1a1;
+                 }
+             }
+
+             .userform {
+                 @include fs(16px, 400, #333);
+
+                 input {
+                     height: 45px !important;
+                 }
+             }
+
+             .radiobtn {
+                 @include fs(16px, 400, #333);
+                 padding-top: 8px;
+
+                 label {
+                     cursor: pointer;
+                     margin-left: 5px;
+                 }
+
+                 .lastpass {
+                     p {
+                         @include fs(14px, 600, #a94442);
+                         padding-left: 147px !important;
+                     }
+                 }
+             }
+         }
+
+         .submitbtn {
+             width: 400px !important;
+             height: 40px;
+             color: #fff;
+             background: #336699;
+             border-radius: 0;
+             margin-bottom: 25px;
+             @include fs(14px, 700, #ffff);
+
+             &:hover {
+                 color: #fff;
+                 border-color: #3c78b4;
+                 background-color: #3c78b4;
+             }
+         }
+
+         .signin {
+             h5 {
+                 @include fs(14px, 400, #666);
+                 text-align: center;
+                 font-family: $popins;
+             }
+         }
+
+         .signsocial {
+             ul {
+                li{
+                    a{
+                        width: 40px;
+                        height: 40px;
+                        background: transparent;
+                        border: 1px solid #ddd;
+                        text-align: center;
+                        border-radius: 50%;
+                        margin: 0 5px;
+                        &:hover{
+                            background: red;
+                            border-color: green;
+                            color: #fff
+                        }
+                    }
+                    &:first-child:hover{
+                        a{
+                            background: purple;
+                        }
+                    }
+                }
+             }
+         }
+
+         .signupbtn1 {
+             @include fs(17px, 700, #336699);
+             font-family: $popins;
+             border: none;
+             background: none;
+             position: relative;
+             cursor: pointer;
+             margin-left: 148px;
+             margin-top: -7px;
+             transition: all linear .3s;
+
+             &:hover {
+                 &::after {
+                     background: #336699;
+                 }
+             }
+
+             &::after {
+                 @include afterbefore;
+                 bottom: 11px;
+                 left: -43px;
+                 width: 184%;
+                 height: 2px;
+                 background: #a0a1a1;
+             }
+         }
+
+         .signup {
+             p {
+                 @include fs(13px, 400, #666);
+                 font-family: $popins;
+                 line-height: 25px;
+                 text-align: left;
+                 cursor: auto;
+
+                 span {
+                     color: #336699;
+                 }
+             }
+
+             a {
+                 margin-bottom: 20px;
+                 cursor: pointer;
+                 @include fs(14px, 400, #336699);
+                 font-family: $popins;
+                 text-decoration: #336699;
+             }
+         }
+
+         .radiobtn2 {
+             padding-bottom: 13px;
+
+             label {
+                 color: #666;
+
+                 span {
+                     color: #336699;
+                 }
+             }
+         }
+     }
+
+ }
+
+ /* ================================
+            Header part strart
+==================================-*/

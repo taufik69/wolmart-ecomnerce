@@ -1,0 +1,51 @@
+@import'../Mixins/mixins';
+@import'../variable/variable';
+
+
+/*===================== product part start ====================*/
+/*-********************** eldetronic right part start-*****************************-*/
+.depatmemntImg{
+    .offer{
+        position:absolute;
+        top: 7%;
+        left: 20px;
+        background: purple;
+        width: 60px;
+        height: 25px;
+        text-align: center;
+        background: #f77c29;
+        border-radius: 3px;
+        line-height: 25px;
+        @include fs(14px ,600,#fff);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-******************** eletronic  right part end-************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================== product part end ====================*/

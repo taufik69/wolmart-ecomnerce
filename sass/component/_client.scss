@@ -1,0 +1,46 @@
+ @import'../Mixins/mixins';
+ @import'../variable/variable';
+ /*===============================================
+    client part css start
+ ====================================================*/
+#client_part{
+    padding-bottom: 50px;
+    .head{
+        h3{
+            @include fs(22px , 600, #333333);
+            font-family:$popins;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                left: -12px;
+                bottom: -17px;
+                width: 102%;
+                height: 1px;
+               background: #ccc;
+            }
+        }
+    }
+    .client_body{
+        margin-top: 32px;
+        img{
+            border: 1px solid #ccc;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*===============================================
+    client part css end
+ ====================================================*/

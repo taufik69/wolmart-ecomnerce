@@ -1,0 +1,824 @@
+@import'../variable/variable';
+@import'../Mixins/mixins';
+
+/*===============================================
+            mega menu start
+===================================================*/
+#mega_menu {
+    background: #ffff;
+
+    .menu-left {
+        background: #f1f1f1;
+        position: relative;
+        z-index: 99;
+
+        >a {
+            @include fs(17px, 600, #333333);
+            font-family: $popins;
+            position: relative;
+            padding: 15px 0px;
+            margin-left: 24px;
+
+            i.fa-list {
+                margin-right: 5px;
+
+            }
+
+            i.fa-chevron-down {
+                position: absolute;
+                top: 50%;
+                right: -92px;
+                transform: translateY(-50%);
+                font-size: 13px;
+                color: #333333;
+
+            }
+        }
+
+        .menuleftfdropdown {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            height: 555px;
+            background: #ffff;
+
+            >ul {
+                >li {
+                    position: relative;
+
+                    >a {
+                        position: relative;
+                        display: block;
+                        padding: 12px 14px;
+                        @include fs(14px, 400, #000000);
+                        font-family: $popins;
+                        border-bottom: 1px solid #eeee;
+
+                        &:hover,
+                        &:hover i {
+                            color: #336699;
+                        }
+
+                        &:hover i.fa-chevron-right {
+                            right: 10px;
+                            color: #336699;
+                        }
+
+                        i {
+                            color: #6e6b6b;
+                            margin-right: 10px;
+                        }
+
+                        i.fa-chevron-right {
+                            position: absolute;
+                            top: 50%;
+                            right: 20px;
+                            transform: translateY(-50%);
+                            color: #000000;
+                            font-size: 10px;
+                            @include transition(.3s);
+                        }
+                    }
+
+                    .leftdropdown2 {
+                        position: absolute;
+                        left: 100%;
+                        top: 0;
+                        width: 800px;
+                        background: #e0dfdf;
+                        display: none;
+
+                        .megawomenandmen {
+                            padding-left: 25px;
+
+                            h3 {
+                                @include fs(16px, 500, #000000);
+                                font-family: $popins;
+                                line-height: 40px;
+                                text-transform: uppercase;
+                                border-bottom: 1px solid #8f8f8f;
+
+                            }
+
+                            ul {
+                                li {
+                                    a {
+                                        @include fs(14px, 400, #333333);
+                                        font-family: $popins;
+                                        text-transform: capitalize;
+                                        line-height: 35px;
+
+                                        &:hover {
+                                            color: #336699;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .imagedropdown {
+                            position: relative;
+
+                        }
+
+                        .dropdown_image_overlay {
+                            position: absolute;
+                            top: 40px;
+                            left: 20px;
+
+                            h5 {
+                                @include fs(16px, 700, #3d3d3d);
+                                font-family: $popins;
+
+                                span {
+                                    @include fs(18px, 700, #336699);
+                                    font-family: $popins;
+                                }
+                            }
+
+                            h2 {
+                                @include fs(26px, 600, #000000);
+                                font-family: $popins;
+                                margin-top: 3px;
+                            }
+
+                            p {
+                                @include fs(14px, 500, #000000);
+                                font-family: $popins;
+                                margin-top: 8px;
+                                cursor: pointer;
+
+                                i.fa-long-arrow-alt-right {
+                                    color: #000000;
+                                    font-size: 15px;
+                                    margin-left: 3px;
+                                    @include transition(.3s);
+                                }
+
+                                &:hover i.fa-long-arrow-alt-right {
+                                    margin-left: 15px;
+                                    color: #336699;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .leftdropdown2 {
+                            display: block;
+                        }
+                    }
+                }
+
+                li:nth-child(2) {
+                    .leftdropdown2 {
+                        width: 800px;
+
+                        .megawomenandmen {
+                            padding-left: 25px;
+                        }
+
+                        .dropdown_image_overlay {
+                            position: absolute;
+                            top: 370px;
+                            left: 23px;
+
+                            h4 {
+                                @include fs(16px, 600, #fff);
+                                font-family: $popins;
+
+                            }
+
+                            h2 {
+                                @include fs(24px, 600, #ffff);
+                                font-family: $popins;
+
+                            }
+
+                            h5 {
+                                @include fs(20px, 500, #ffff);
+                                font-family: $popins;
+
+                                span {
+                                    @include fs(20px, 500, #f77c29);
+                                    font-family: $popins;
+                                }
+                            }
+
+                            p {
+                                @include fs(16px, 500, #ffff);
+                                font-family: $popins;
+                                margin-top: 6px;
+                            }
+                        }
+                    }
+
+                }
+
+                li:nth-child(3) {
+                    .leftdropdown2 {
+                        width: 800px;
+
+                        .megawomenandmen {
+                            padding-left: 25px;
+                        }
+
+                        .dropdown_image_overlay {
+                            position: absolute;
+                            top: 30px;
+                            left: 23px;
+
+                            h4 {
+                                @include fs(15px, 400, #fff);
+                                font-family: $popins;
+                                margin-bottom: 10px;
+                            }
+
+                            h2 {
+                                @include fs(25px, 700, #fff);
+                                font-family: $popins;
+
+                            }
+
+                            h5 {
+                                @include fs(25px, 700, #fff);
+                                font-family: $popins;
+
+                                span {
+                                    @include fs(25px, 700, #f77c29);
+                                    font-family: $popins;
+                                    display: block;
+                                }
+                            }
+
+                            .btn {
+                                margin-top: 10px;
+
+                                a {
+                                    padding: 8px 15px;
+                                    background: transparent;
+                                    color: #fff;
+                                    text-align: center;
+                                    border: 2px solid #ffff;
+                                    font-size: 13px;
+                                    text-transform: uppercase;
+                                    font-weight: 800;
+                                    margin-left: -10px;
+                                    @include transition(.1s);
+
+                                    &:hover {
+                                        background: #ffff;
+                                        color: #336699;
+                                        border-color: #fff;
+                                    }
+
+                                }
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                li:nth-child(4) {
+                    .leftdropdown2 {
+                        width: 1017px;
+
+                        .furnitureimg {
+                            padding-top: 20px;
+                            position: relative;
+
+                            a {
+                                img {
+                                    margin-left: 25px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+
+                            .furniture_image_overlay:first-child {
+                                position: absolute;
+                                right: 50px !important;
+                                bottom: 50px;
+
+                                h5 {
+                                    @include fs(12px, 400, #333333);
+                                    font-family: $popins;
+                                }
+
+                                h4 {
+                                    @include fs(20px, 600, #000);
+                                    font-family: $popins;
+                                }
+
+                                p {
+                                    @include fs(12px, 400, #333333);
+                                    font-family: $popins;
+
+                                    span {
+                                        @include fs(15px, 400, #000000);
+                                        font-family: $popins;
+                                    }
+                                }
+                            }
+
+                            .furniture_image_overlay:last-child {
+                                position: absolute;
+                                left: 50px;
+                                bottom: 50px;
+
+                                h5 {
+                                    @include fs(12px, 600, #ffff);
+                                    font-family: $popins;
+                                }
+
+                                h4 {
+                                    @include fs(20px, 600, #ffff);
+                                    font-family: $popins;
+                                }
+
+                                p {
+                                    @include fs(12px, 500, #281e88);
+                                    font-family: $popins;
+
+                                    span {
+                                        @include fs(15px, 500, #810707);
+                                        font-family: $popins;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*========main menu start=============*/
+    .main_mega_menu2 {
+        >ul {
+            display: flex;
+
+            >li {
+                position: relative;
+
+                >a {
+                    padding: 16px 0px;
+                    @include fs(15px, 600, #000000);
+                    font-family: $popins;
+                    margin: 0px 20px;
+                    position: relative;
+
+
+                    &::after {
+                        @include afterbefore();
+                        bottom: 10px;
+                        left: 0;
+                        width: 100%;
+                        height: 3px;
+                        background: #336699;
+                        transform: scalex(0);
+                        transform-origin: 100% 0;
+                        transition: transform .3s;
+
+                    }
+
+                    &:hover {
+                        &::after {
+                            transform: scalex(1);
+                            transform-origin: 0 100%;
+                        }
+
+                    }
+
+                    i.fa-chevron-down {
+                        font-size: 12px;
+                        color: #333;
+                        margin-left: 5px;
+                    }
+
+                }
+
+                .megamenu_drop_down {
+                    position: absolute;
+                    width: 990px;
+                    top: 105%;
+                    left: 20%;
+                    background: #ebe9e9;
+                    display: none;
+                    z-index: 9999;
+
+                    .menu_element {
+                        padding: 20px;
+
+                        h4 {
+                            @include fs(15px, 500, #333333);
+                            font-family: $popins;
+                            margin-bottom: 10px;
+                        }
+
+                        ul {
+                            li {
+                                a {
+                                    @include fs(14px, 400, #666);
+                                    font-family: $popins;
+                                    padding: 7px 0;
+
+                                    &:hover {
+                                        color: #336699;
+                                    }
+                                }
+
+                                &:nth-child(4) {
+                                    a {
+                                        span {
+
+                                            background: #ff9742;
+                                            @include fs(12px, 400, #ffff);
+                                            padding: 0px 8px;
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(5) {
+                                    a {
+                                        span {
+
+                                            background: #336699;
+                                            @include fs(12px, 400, #ffff);
+                                            padding: 0px 8px;
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+
+                    .third_menu_element {
+                        ul {
+                            li {
+                                a {
+                                    span {
+                                        background: #336699;
+                                        @include fs(12px, 400, #ffff);
+                                        padding: 0px 8px;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .forthmenu_element {
+                        ul {
+                            li {
+                                a {
+                                    span {
+
+                                        background: #ff9742;
+                                        @include fs(12px, 400, #ffff);
+                                        padding: 0px 8px;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .vendordropdown {
+                    position: absolute;
+                    top: 100%;
+                    left: 20%;
+                    background: #ececec;
+                    width: 200px;
+                    display: none;
+                    z-index: 999;
+
+                    .vendor_element {
+                        padding: 20px;
+
+                        ul {
+                            li {
+                                position: relative;
+
+                                a {
+                                    @include fs(15px, 400, #333333);
+                                    font-family: $popins;
+                                    position: relative;
+                                    padding: 5px 0;
+
+                                    &:hover {
+                                        color: #336699;
+                                    }
+
+                                    i.fa-chevron-right {
+                                        position: absolute;
+                                        right: -60px;
+                                        font-size: 11px;
+                                    }
+
+
+                                }
+
+                                .vendorelement_dropdown2 {
+                                    position: absolute;
+                                    top: -60%;
+                                    left: 100%;
+                                    width: 200px;
+                                    background: #f0eeee;
+                                    display: none;
+                                    opacity: 0;
+
+                                    .vendornesteddd {
+                                        padding: 10px 20px;
+
+                                        ul {
+                                            li {
+                                                a {
+                                                    @include fs(14px, 400, #333333);
+                                                    font-family: $popins;
+
+                                                    &:hover {
+                                                        color: #336699;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    .vendorelement_dropdown2 {
+                                        display: block;
+                                        opacity: 1;
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+
+
+                .blogdropdown {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background: #f1f1f1;
+                    width: 214px;
+                    display: none;
+                    z-index: 999;
+
+                    .blogddelement {
+                        padding: 20px;
+
+                        ul {
+                            li {
+                                position: relative;
+
+                                a {
+                                    @include fs(14px, 400, #000900);
+                                    font-family: $popins;
+                                    position: relative;
+                                    padding: 6px 0;
+                                    display: block;
+
+                                    i.fa-chevron-right {
+                                        position: absolute;
+                                        top: 50%;
+                                        right: 0px;
+                                        font-size: 12px;
+                                        @include transition(.2s);
+
+                                    }
+
+                                    &:hover {
+                                        i.fa-chevron-right {
+                                            right: -10px;
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    .griddd2 {
+                                        display: block;
+                                    }
+                                }
+
+                                ul {
+                                    position: absolute;
+                                    top: -36%;
+                                    left: 105%;
+                                    background: #f1f1f1;
+                                    display: none;
+                                    width: 230px;
+
+
+
+                                    li {
+                                        padding: 5px 20px;
+
+                                        a {
+                                            @include fs(13px, 400, #000000);
+                                            font-family: $popins;
+                                        }
+
+                                    }
+
+                                }
+
+                                &:hover {
+                                    ul {
+                                        display: block;
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+
+                .pagedropdown {
+                    position: absolute;
+                    top: 105%;
+                    left: 15%;
+                    width: 200px;
+                    background: #f1f1f1;
+                    display: none;
+                    z-index: 9999;
+
+                    .pageddelement {
+                        padding: 10px 20px;
+
+                        ul {
+                            li {
+                                a {
+                                    @include fs(14px, 400, #000000);
+                                    font-family: $popins;
+                                    padding: 7px 0;
+
+                                    &:hover {
+                                        color: #336699;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+
+                .elementdropdown {
+                    position: absolute;
+                    top: 100%;
+                    left: 13%;
+                    background: #f1f1f1;
+                    width: 200px;
+                    display: none;
+                    z-index: 999;
+
+                    .elementddelement {
+                        padding: 10px 20px;
+
+                        ul {
+                            li {
+                                a {
+                                    @include fs(14px, 400, #000000);
+                                    font-family: $popins;
+                                    padding: 5px 0;
+
+                                    &:hover {
+                                        color: #336699;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /*================ element menu hover effert dorpdown=============*/
+                &:hover {
+                    .elementdropdown {
+                        display: block;
+                    }
+                }
+
+                /*================ element menu hover effert dorpdown=============*/
+
+                /*===================shop hover effert dorpdown ====================*/
+                &:hover {
+                    .megamenu_drop_down {
+                        display: block;
+                    }
+                }
+
+                /*===================shop hover effert dorpdown ====================*/
+
+
+                /*================ page menu hover effert dorpdown=============*/
+
+                &:hover {
+                    .pagedropdown {
+                        display: block;
+                    }
+                }
+
+                /*================ page menu hover effert dorpdown=============*/
+
+                /*================ blog menu hover effert dorpdown=============*/
+                &:hover {
+                    .blogdropdown {
+                        display: block;
+                    }
+                }
+
+                /*================ blog menu hover effert dorpdown=============*/
+
+                /*================vendor menu hover effert dorpdown=============*/
+                &:hover {
+                    .vendordropdown {
+                        display: block;
+                    }
+                }
+
+                /*================vendor menu hover effert dorpdown=============*/
+            }
+
+        }
+    }
+
+    .menu_last_part {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .track {
+            margin-right: 20px;
+
+            h4 {
+                @include fs(17px, 500, #000000);
+                font-family: $popins;
+                margin-top: 20px;
+                cursor: pointer;
+                @include transition(.3s);
+
+                i {
+                    @include transition(.3s);
+                    margin-right: 2px;
+                }
+            }
+
+            &:hover h4,
+            &:hover i {
+                color: #336699;
+            }
+        }
+
+        .dailydeal {
+            margin-right: 10px;
+
+            h4 {
+                @include fs(17px, 600, #000000);
+                font-family: $popins;
+                margin-top: 20px;
+                @include transition(.2s);
+                cursor: pointer;
+
+                i {
+                    font-size: 18px;
+                    margin-right: 8px;
+                    @include transition(.2s);
+                }
+
+                &:hover {
+                    color: #336699;
+                }
+            }
+        }
+    }
+}
+
+/*========main menu  end=============*/
+
+/*===============================================
+            mega menu end
+===================================================*/
+
+/*===============================================
+            Banner part start
+===================================================*/
+
+
+/*===============================================
+            Banner part end
+===================================================*/

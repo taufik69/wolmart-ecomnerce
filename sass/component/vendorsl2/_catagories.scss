@@ -1,0 +1,99 @@
+/*============================================
+        vendor store lister catagories start
+===============================================*/
+#vendorcatagories_part{
+    padding: 20px 0px;
+    .filtercatagori{
+        margin-bottom: 25px;
+        .headOFcatagori{
+            @include fs(17px, 400, #333);
+            font-family: $popins;
+            margin: 15px 0;
+        }
+    }
+    .rightportion{
+
+        @include fs(14px, 500, #333);
+        font-family: $popins;
+
+    }
+    .colbal{
+        margin-bottom: 25px;
+        box-shadow: 0px 9px 15px -6px rgba(0,0,0,0.65);
+-webkit-box-shadow: 0px 9px 15px -6px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 9px 15px -6px rgba(0,0,0,0.65);
+    }
+    .left{
+        .eventlister2{
+            top: 30px;
+            left: 30px;
+            h2{
+                @include fs(20px, 500, #fff);
+                font-family: $popins;
+                margin-bottom: 10px;       
+            }
+            .vsli{
+                color: #ff9742;
+                margin-bottom: 10px;
+            }
+        }
+        .iconstart{
+            li{
+                a{
+                    @include fs(13px, 400, #fff);
+                    font-family: $popins;   
+
+                    i.fa-envelope{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .inquiry_btn{
+        button{
+            margin: 15px 10px;
+        }
+        
+    }
+    .vendors2lright{
+        .vlsoverlay2{
+            top: -37px;
+            right: 75px;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            background: #ff9742;
+            img{
+                @include transition(.3s);
+                border-radius: 50%;
+            }
+        }
+        &:hover{
+            .vlsoverlay2{
+                img{
+                    transform: translate(5px,-15px);
+                    border: 2px solid #207933;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================================
+        vendor store lister catagories end
+===============================================*/

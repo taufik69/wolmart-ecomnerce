@@ -1,0 +1,42 @@
+
+/*===============================================================
+                Shop banner  Start
+=================================================================*/
+#shopbanner{
+    padding: 10px 0 20px;
+    .bannershop{
+        .shopbb_overlay{
+            padding:70px 90px 0;
+            h2{
+                color: black;
+                font-family: $popins;
+                margin-bottom: 0.2rem;
+                font-size: 1.8em;
+                font-weight: 600;
+            }
+            h1{
+                margin-bottom: 1rem;
+                font-size: 2.5em;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            a{
+                padding: 15px 28px;
+                background: #333;
+                border-radius: 3px;
+                @include fs(16px, 600, #fff);
+                font-family: $popins;
+                &:hover{
+                    background: #454545;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*===============================================================
+                Shop banner  end
+=================================================================*/

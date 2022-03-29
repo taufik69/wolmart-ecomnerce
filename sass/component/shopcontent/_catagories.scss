@@ -1,0 +1,34 @@
+/*=========================================================
+                catagoris product css start
+===========================================================*/
+#nodejs {
+    .rownode {
+        .catagoriesProduct {
+            padding: 8px 0px 0 9px;
+            border-radius: 50%;
+            img {
+                border-radius: 50%;
+                transform: scale(1);
+                @include transition(.2s);
+
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: -1px 3px 21px 4px rgba(0,0,0,0.4);
+                    -webkit-box-shadow: -1px 3px 21px 4px rgba(0,0,0,0.4);
+                    -moz-box-shadow: -1px 3px 21px 4px rgba(0,0,0,0.4);
+                }
+            }
+
+            p {
+
+                padding: 11px 32px 0;
+            }
+        }
+    }
+}
+
+
+
+/*=========================================================
+                catagoris product  css start
+===========================================================*/

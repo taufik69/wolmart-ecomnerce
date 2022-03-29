@@ -1,0 +1,213 @@
+/*======================================================
+                    vendor accesorries part start
+========================================================*/
+
+#allcatagories {
+    padding: 0;
+    .modufy_color {
+        label {
+            color: #ccc;
+        }
+    }
+
+    .sent_btnnn {
+        button {
+
+            font-size: 16px;
+            font-weight: 600;
+
+            &:hover {
+                background: #454545;
+            }
+        }
+    }
+
+    .datemodify {
+        ul {
+            li {
+                margin-bottom: 5px;
+
+                a {
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    .leftimg {
+        margin-bottom: 20px;
+    }
+
+    .lefttext {
+        margin-top: 10px;
+
+        p {
+            @include fs(15px, 500, #333);
+
+        }
+
+        ul {
+            li {
+                padding: 0;
+
+                a {
+                    font-size: 12px;
+                    color: #f93;
+
+                    .lasti {
+                        color: crimson;
+                    }
+                }
+
+            }
+        }
+
+        h6 {
+            @include fs(18px, 600, #333);
+            font-family: $popins;
+            margin-top: 5px;
+        }
+    }
+
+    .vendor_head {
+        img {
+            border-radius: 5px;
+        }
+
+        .vendor_overlay {
+            top: 0%;
+            left: 0%;
+            width: 37%;
+            height: 100%;
+            background: rgba(37, 38, 42, 0.9);
+
+            .vendor_logo {
+                margin: 50px 0 20px 40px;
+                border-radius: 50%;
+            }
+
+            .vendor_text {
+                margin-left: 40px;
+
+                h4 {
+                    @include fs(20px, 600, #fff);
+                    font-family: $popins;
+                    margin-bottom: 10px;
+                }
+
+                .adress {
+
+                    @include fs(15px, 400, #fff);
+                    margin-bottom: 10px;
+                    font-family: $popins;
+                    padding: 5px;
+
+                    i.fa-map-marker-alt {
+                        color: #fff;
+                        font-size: 15px;
+                        margin-right: 5px
+                    }
+
+
+                }
+
+                a {
+                    @include fs(15px, 400, #fff);
+                    margin-bottom: 10px;
+                    font-family: $popins;
+
+                    i.fa-phone-alt {
+                        color: #fff;
+                        font-size: 15px;
+                        margin-right: 5px
+                    }
+                }
+
+                .reviewvendor {
+                    @include fs(15px, 400, #fff);
+                    margin-bottom: 10px;
+                    font-family: $popins;
+
+                    i.fa-star {
+                        color: #fff;
+                        font-size: 15px;
+                        margin-right: 5px
+                    }
+                }
+
+                .storebag {
+                    @include fs(15px, 400, #fff);
+                    font-family: $popins;
+
+                    i.fa-shopping-bag {
+                        color: #fff;
+                        font-size: 15px;
+                        margin-right: 5px
+                    }
+                }
+
+            }
+            .vendor_icon{
+                margin-left: 28px;
+                padding: 20px 0;
+                li{
+                    a{
+                        font-size: 13px;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        text-align: center;
+                        color: #fff;
+                        margin-left: 10px;
+                        transition: all linear .2s;
+                    }
+                    &:hover{
+                        .iconfacebook{
+                            transform: translateY(-10px);
+                            background: #007aff;
+                            border-color: #007aff;
+                        }
+
+                        .icongoogle{
+                            transform: translateY(-10px);
+                            background: #dd4b39;;
+                            border-color: #dd4b39;;
+                        }
+
+                        .icontwiter{
+                            transform: translateY(-10px);
+                            background: #00adef;;
+                            border-color: #00adef;
+                        }
+
+                        .iconpinterst{
+                            transform: translateY(-10px);
+                            background: #f96a02;
+                            border-color: #f96a02;
+                        }
+
+                        .icontube{
+                            transform: translateY(-10px);
+                            background: #da1709;
+                            border-color: #da1709;
+                        }
+
+                        .iconinsta{
+                            transform: translateY(-10px);
+                            background: #567719;
+                            border-color: #567719;
+                        }
+                    }
+                }
+            }
+ 
+        }
+    }
+
+}
+
+/*======================================================
+                    vendor accesorries part end
+========================================================*/

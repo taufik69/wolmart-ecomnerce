@@ -1,0 +1,12 @@
+@mixin fs($fs,$fw,$color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+@mixin afterbefore() {
+    position: absolute;
+    content: '';
+}
+@mixin transition($second){
+    transition: all linear $second;
+}

@@ -1,0 +1,55 @@
+/*==========================================================
+            Svg part  css start
+===========================================================*/
+#svg_part {
+    padding: 30px 0;
+
+    .svg_icon {
+        margin-bottom: 30px;
+        width: 230Px;
+        height: 161px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.39);
+        -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.39);
+        -moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.39);
+
+        svg {
+            margin-top: 30px;
+            fill: #aaa;
+            stroke: #aaa;
+            stroke-dashoffset: 1500;
+            stroke-dasharray: 1500;
+             @include transition(.3s);
+ 
+        }
+
+        P {
+            @include fs(17px, 600, #333);
+            font-family: $popins;
+            margin: 5px 0;
+        }
+        &:hover {
+            svg{
+                transform: scale(1.6);
+                stroke-dashoffset: 0;
+                stroke: #336699;
+                fill: transparent;
+                transition: transform 0.3s, fill 0.5s, stroke-dashoffset 6s, -webkit-transform 0.3s;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*==========================================================
+            Svg part  css End
+===========================================================*/

@@ -1,0 +1,23 @@
+
+/*========================================
+            filter head js start
+===========================================*/
+
+
+#headblog{
+
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9192051820728291) 41%, rgba(0,212,255,1) 100%);
+    .eidited_head{
+        .grid{
+            @include fs(35  px ,600, #fff);
+            font-family: $popins;
+        }
+    }
+}
+
+
+
+/*========================================
+            filter head js End
+===========================================*/

@@ -1,0 +1,115 @@
+/*=============================================
+            alert heading  part start
+===============================================*/
+
+ #box{
+     padding: 20px  30px;
+     
+     .top-head{
+         @include fs(26px , 600 , #000000);
+         font-family: $popins;
+         margin-bottom: 20px;
+     }
+     .inputfield{
+         border: 1px solid #c4df9b;
+         padding: 18px 20px;
+         border-radius: 4px;
+         h5{
+            @include fs(14px , 500 , #799b5a);
+            font-family: $popins;           
+                 
+        }
+     }
+     .forblue{
+         border-color: #d7e8f8;
+         h5{
+             color: #336699;
+         }
+     }
+     .golden{
+         border-color: #ffcc6d;;
+         h5{
+             color: #ffcc6d;
+         }
+     }
+     .chocalate{
+         border-color: #f7e5e5;
+         h5{
+             color: #6d1a17;
+         }
+     }
+     .bgbox1{
+         background:#c4df9b;
+         h5{
+             i{
+                 color:#799b5a;
+                 font-size:18px;
+                 margin-right:8px;
+                 
+             }
+         }
+     }
+     .bgbox2{
+        background: #d7e8f8;
+        border: #d7e8f8;
+        h5{
+            color: #336699;
+            i{
+                color:#336699;
+                font-size:18px;
+                margin-right:8px;
+                
+            }
+        }
+     }
+
+     .bgbox3{
+        background: #fff1d7;
+        border: #fff1d7;
+        h5{
+            color: #ffa800;
+            i{
+                color:#ffa800;
+                font-size:18px;
+                margin-right:8px;
+                
+            }
+        }
+     }
+
+     .bgbox4{
+        background: #f7e5e5;
+        border: #f7e5e5;
+        h5{
+            color: #a94442;
+            i{
+                color:#a94442;
+                font-size:18px;
+                margin-right:8px;
+                
+            }
+        }
+     }
+
+     .btnfild{
+         .cbtn{
+             padding: 10px 10px;
+             border: 1px solid #799b5a;
+             background: #799b5a;
+             border-radius:3px;
+             margin-right: 15px;
+             h4{
+                 @include fs(15px, 600,#fff);
+                 font-family: $popins;
+                 align-items: center;
+
+             }
+         }
+     }
+ }
+
+
+
+/*=============================================
+            alert heading  part start
+===============================================*/

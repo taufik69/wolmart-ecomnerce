@@ -1,0 +1,179 @@
+@import'../Mixins/mixins';
+@import'../variable/variable';
+
+/*====================================================================
+                Footer part  css start
+======================================================================*/
+#footerpart {
+    padding: 60px 0;
+
+    .left1 {
+        h5 {
+            @include fs(14px, 500, #333);
+            font-family: $popins;
+            line-height: 2.1;
+            margin-bottom: 0.9rem;
+        }
+
+        a {
+            @include fs(1rem, 600, #333);
+            font-family: $popins;
+            line-height: 1;
+            margin-bottom: 0.9rem;
+        }
+
+        p {
+            @include fs(16px, 600, #666);
+        }
+
+        .footertopicon {
+            padding-top: 20px;
+
+            li:nth-child(1) {
+                a {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    background: #336699;
+                    color: #ffff;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 15px;
+                    @include transition(.3s);
+
+                    &:hover {
+                        background: #181a79;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            li:nth-child(2) {
+                a {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    background: #00adef;
+                    color: #ffff;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 15px;
+                    @include transition(.3s);
+
+                    &:hover {
+                        background: #308fb4;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            li:nth-child(3) {
+                a {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    background: #cc0001;
+                    color: #ffff;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 15px;
+                    @include transition(.3s);
+
+                    &:hover {
+                        background: #e04609;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+
+            li:nth-child(4) {
+                a {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    background: #2c567e;
+                    color: #ffff;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 15px;
+                    @include transition(.3s);
+
+                    &:hover {
+                        background: #0e526d;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+
+            li:nth-child(5) {
+                a {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    background: #f96a02;
+                    color: #ffff;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 15px;
+                    @include transition(.3s);
+
+                    &:hover {
+                        background: #e2aa10;
+                        margin-top: 10px;
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .right_foter {
+        margin-left: 30px;
+
+        h5 {
+            @include fs(17px, 500, #333);
+            font-family: $popins;
+            margin-bottom: 20px;
+        }
+        ul {
+            li {
+                a {
+                    @include fs(14px, 400, #333);
+                    font-family: $popins;
+                    margin-bottom: 10px;
+                    &:hover{
+                        color: #181a79;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================================================
+                Footer part  css end
+======================================================================*/

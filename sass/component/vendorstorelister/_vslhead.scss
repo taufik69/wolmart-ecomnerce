@@ -1,0 +1,21 @@
+
+/*=========================================
+    vendor store lister breadcumb  start
+============================================*/
+
+#breadcrumb{
+    .vslbreadline{
+        padding: 7px 0;
+        border-bottom: 1px solid #ccc;
+        li{
+            &:last-child{
+                font-weight: 600;
+                color: #666;
+            }
+        }
+    }
+}
+
+/*=========================================
+    vendor store lister breadcumb  end
+============================================*/

@@ -1,0 +1,53 @@
+
+/*===========================================================
+                counter up css start
+==============================================================*/
+
+#counterup{
+    padding: 40px;
+    
+    .colcontent{
+        .counterjs{
+            @include fs(65px,700,#ccc);
+            font-family: $popins;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        h5{
+            @include fs(25px,500,#333);
+            font-family: $popins;
+            text-align: center;
+        }
+        p{
+            @include fs(15px,400,#333);
+            font-family: $popins;
+            text-align: center;
+            padding: 20px;
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========================================================
+                    counter up css End
+==============================================================*/

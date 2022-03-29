@@ -1,0 +1,65 @@
+
+
+
+/*============================================
+        vendor store lister head start
+===============================================*/
+
+#vslheadPart{
+    padding: 5px 0 20px 0;
+    .custombtn{        
+        background: #1d4b8f;
+        @include fs(15px, 500, #fff);
+        font-family: $popins;
+        i.fa-bars{
+            margin-left: 5px;
+            letter-spacing: 3px
+        }
+    }
+    .custombtnnext{
+        @include fs(15px, 500, #333);
+        font-family: $popins;
+        line-height: 38px;
+        margin-left: -30px;
+    }
+    .sortby{
+        @include fs(15px, 600, #333);
+        font-family: $popins;
+        line-height: 35px;
+    }
+    .customdd{
+        margin: 0 15px;
+        button{
+            border: 2px solid #1d4b8f;
+            padding: 4px 20px;
+            @include fs(15px, 500, #333);
+            font-family: $popins;
+       }      
+    }
+    .icon{
+        i.fa-th{
+            font-size: 23px;
+            color: #777;
+            padding: 5px 2px;
+            &:hover{
+                color: #1d4b8f;
+                @include transition(.1s);
+            }
+        }
+    }
+    .collapesebodoy{
+        padding: 25px 0;
+
+        button{
+            margin: 20px 0;
+            box-shadow: -1px 4px 10px -2px rgba(0,0,0,0.9);
+            -webkit-box-shadow: -1px 4px 10px -2px rgba(0,0,0,0.9);
+            -moz-box-shadow: -1px 4px 10px -2px rgba(0,0,0,0.9);
+
+        }
+    }
+}
+
+/*============================================
+        vendor store lister head end
+===============================================*/

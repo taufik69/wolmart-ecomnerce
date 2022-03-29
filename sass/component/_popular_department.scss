@@ -1,0 +1,191 @@
+@import'../variable/variable';
+@import'../Mixins/mixins';
+
+/*=================================================
+            popular deapartment part start 
+==================================================*/
+
+
+#department {
+    padding: 65px 0;
+
+    .department_head {
+        @include fs(20px, 700, #333);
+        font-family: $popins;
+        text-align: center;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+
+    }
+
+    .department_menu {
+        li {
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            padding: 0 15px;
+            border-radius: 5px;
+
+            button {
+                @include fs(15px, 600, #333);
+                text-transform: capitalize;
+                font-family: $popins;
+                background: transparent;
+            }
+
+
+
+            &:first-child {
+                border: 1px solid #336699;
+
+                .fristbtn {
+                    color: #336699;
+                }
+            }
+
+            &:hover,
+            &:hover button {
+                border-color: #336699;
+                color: #336699;
+            }
+        }
+    }
+
+    /*================= departmaner fiter body ==================*/
+
+    .department_body {
+        padding: 30px 0;
+
+        ul {
+            flex-wrap: wrap;
+
+            li {
+                width: 247px;
+                margin-right: 16px;
+                margin-bottom: 20px;
+                .depatmemntImg {
+                    position: relative;
+
+                    img {
+
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        img {
+                            &:nth-child(2) {
+                                display: block;
+                            }
+                        }
+
+                        img {
+                            &:nth-child(1) {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .department_overlay {
+                        position: absolute;
+                        top: 57%;
+                        right: 8%;
+                        transform: translateY(-50%);
+                        width: 100%;
+                        height: 100%;
+                        display: none;
+
+                        ul {
+                            text-align: end;
+                            
+                            li {
+                                margin: 10px; 
+
+                                a {
+                                    width: 35px;
+                                    height: 35px;
+                                    color: #3333;
+                                    border: 1px solid #ccc;
+                                    background: #ffffffe8;
+                                    border-radius: 50%;
+                                    line-height: 34px;
+                                    font-size: 15px;
+                                    text-align: center;
+                                    position: relative;
+
+                                    &:hover {
+                                        background: #336699d5;
+                                        color: #fff;
+                                        border-color: #336699;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(3),
+                        &:nth-child(5){
+                            
+                            p{
+                                position: absolute;
+                                top: -5px;
+                                left: 38px;
+                                width: 65px;
+                                height: 25px;
+                                background: #f77c29;
+                                line-height: 25px;
+                                text-align: center;
+                                @include fs(14px ,400, #333333);
+                            }
+                        }
+                    }
+
+      
+                }
+
+
+                .departmentText {
+                    h6 {
+                        @include fs(13px, 500, #333);
+                        font-family: $popins;
+                        text-align: center;
+                        margin-top: 8px;
+                    }
+
+                    .rating_star {
+                        text-align: center;
+
+                        a {
+                            @include fs(12px, 600, #f77c29);
+                            font-family: $popins;
+
+                            &:nth-child(5) {
+                                @include fs(12px, 600, #666666c7);
+                                font-family: $popins;
+                            }
+
+                        }
+
+                        h3 {
+                            @include fs(17px, 700, #333);
+                            font-family: $popins;
+                            margin-bottom: 4px;
+                        }
+                    }
+
+                }
+                &:hover {
+                    .department_overlay {
+                        display: block;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    /*================= departmaner fiter body ==================*/
+}
+
+/*=================================================
+            popular deapartment part End     
+==================================================*/

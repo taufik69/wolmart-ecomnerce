@@ -1,0 +1,26 @@
+
+/*===================================================================
+            vendor browser catagories start
+=======================================================================*/
+
+#mega_menu{
+    .Vendor_browerhover{
+        @include transition(.1s);
+        a{
+            @include transition(.1s);
+        }
+        &:hover{
+            background: #336699;
+            a{
+                color:#fff;
+            }
+            i.fa-chevron-down{
+                color: #fff;
+            }
+        }
+    }
+}
+
+/*===================================================================
+            vendor browser catagories start
+=======================================================================*/

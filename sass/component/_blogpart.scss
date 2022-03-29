@@ -1,0 +1,108 @@
+@import'../Mixins/mixins';
+@import'../variable/variable';
+
+
+/*==========================================================================
+                    blog part css start
+============================================================================*/
+
+#client_part{
+    .blog{
+        h3{
+            &::after{
+                width: 843%
+                
+            }
+        }
+        h5{
+            @include fs(15px, 500,#000);
+            font-family: $popins;
+            margin-left: 1040px;
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+    .blog_body{
+        margin-top: 30px;
+        .ing_body{
+            overflow: hidden;
+            margin-right: 20px;
+            img{
+                transform: scale(1);
+                @include transition(.3s);
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        h5{
+            @include fs(16px, 500,#666);
+            font-family: $popins;
+            margin-top: 10px;
+            span{
+                @include fs(10px, 500,#ccc);
+                font-family: $popins;
+            } 
+        }
+        h4{
+            @include fs(18px, 500,#000000);
+            font-family: $popins;
+            margin-top: 10px;
+            cursor: pointer;
+            &:hover{
+                color: #336699;
+
+            }
+        }
+        a{
+            @include fs(14px, 400,#666);
+            font-family: $popins;
+            margin-top: 10px;
+            position: relative;
+            &::after{
+                position: absolute;
+                @include afterbefore();
+                bottom: -2px;
+                left: 0;
+                width: 100%;
+                height: 4px ;
+                background: #181717;
+                transform: scale(0);
+                @include transition(.3s);
+            }
+            &:hover{
+                &::after{
+                    transform: scale(1);
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========================================================================
+                    blog part css End
+============================================================================*/

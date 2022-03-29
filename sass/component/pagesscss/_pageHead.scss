@@ -1,0 +1,70 @@
+/*===================================================
+            page head part css start
+=====================================================*/
+#pagehead {
+    padding: 90px o;
+
+    .h1head {
+        h1 {
+            @include fs(45px, 700, #333);
+            font-family: $popins;
+            text-align: center;
+
+            span {
+                display: block;
+                font-family: $popins;
+                text-align: center;
+
+            }
+        }
+        p{
+            @include fs(14px, 400, #333);
+            font-family: $popins;
+            text-align: center;
+            margin-top: 20px;
+            span{
+                display: block;
+                font-family: $popins;
+                text-align: center;
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .pageheadimg{
+        img{
+            border-radius: 6px;
+            @include transition(.2s);
+            &:hover{
+                transform: translateX(10px);
+            }
+        }
+    }
+    .bootstrapservice{
+        .headbootservice{
+            margin-top: 70px;
+            h2{
+                @include fs(30px, 700, #333);
+                font-family: $popins;
+                margin-top: 10px;
+    
+            }
+        }
+    }
+    .page2ndimg{
+        margin: 30px;
+        img{
+            margin-left: 30px;            
+            border-radius: 6px;
+            @include transition(.2s);
+            &:hover{
+                transform: translateX(-15px);
+            }
+        }
+    }
+}
+
+
+
+/*===================================================
+            page head part css End
+=====================================================*/
